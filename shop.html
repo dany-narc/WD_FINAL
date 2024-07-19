@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomings Shop - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    .shop-section, .cart-section {
+        padding: 2rem 0;
+    }
+    
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+    }
+    
+    .product-card h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .product-card p {
+        font-size: 1.2rem;
+    }
+</style> 
+</head>
+<body>
+    <header>
+        <img src="bloomingslogo.png" alt="Bloomings Shop Logo" class="header-logo">
+        <h1>Bloomings Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> AVAILABLE NOW !!</h1>
+        <section class="shop-section">
+            <div class="container">
+                <div class="row" id="products"></div>
+            </div>
+        </section>
+        <section class="cart-section">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <ul id="cart-items" class="list-group"></ul>
+                <p>Total: PHP<span id="total-price">.00</span></p>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <img src="bloomingslogo.png" alt="Bloomings Shop Logo">
+        <p>Name: Danyka Beatriz B. Narciso</p>
+        <p>Contact us at <a href="mailto:danyka.bea16@gmail.com">info@bloomingshop.com</a></p>
+        <p>&copy; 2024 Bloomings Shop. All rights reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="shoping.js"></script>
+</body>
+</html>
